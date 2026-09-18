@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Provantry — Your Pantry, Perfected.</title>
+<meta name="description" content="Provantry is a pantry inventory app by Blue Ink Diagnostics. Scan groceries, track expiration dates, and always know what you have on hand.">
+<link rel="icon" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F5EDE0;
+    --border: #E0D3B8;
+    --brown: #4A2E18;
+    --brown-soft: #8A6F52;
+    --orange: #C1652F;
+    --moss: #66763F;
+    --moss-bg: #E9EDDB;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--cream);
+    color: var(--brown);
+    font-family: 'Karla', system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .back {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--brown-soft);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    margin: 48px 0 32px;
+  }
+
+  .back:hover { color: var(--orange); border-bottom-color: var(--orange); }
+
+  .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+
+  .logo-row img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
+
+  .logo-row span {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--brown);
+  }
+
+  header { padding-bottom: 56px; }
+
+  h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: clamp(36px, 6vw, 52px);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    max-width: 12ch;
+    margin-bottom: 20px;
+  }
+
+  .lede {
+    font-size: 19px;
+    color: var(--brown-soft);
+    max-width: 46ch;
+  }
+
+  main { padding-bottom: 72px; }
+
+  .features { list-style: none; border-top: 1px solid var(--border); }
+
+  .features li {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    gap: 20px;
+    align-items: baseline;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .features .tag {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--moss);
+    background: var(--moss-bg);
+    padding: 4px 10px;
+    border-radius: 6px;
+    justify-self: start;
+    white-space: nowrap;
+  }
+
+  .features h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .features p {
+    color: var(--brown-soft);
+    font-size: 16px;
+    max-width: 52ch;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 40px 0 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    color: var(--brown-soft);
+    font-size: 14px;
+  }
+
+  footer a {
+    color: var(--brown);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  footer a:hover { border-bottom-color: var(--orange); color: var(--orange); }
+
+  footer .links { display: flex; gap: 24px; }
+
+  @media (max-width: 520px) {
+    .features li { grid-template-columns: 1fr; gap: 8px; }
+    footer { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; Blue Ink Diagnostics</a>
+
+    <header>
+      <div class="logo-row">
+        <img src="logo.png" alt="Provantry logo">
+        <span>Provantry</span>
+      </div>
+      <h1>Know what's in your pantry, before you shop.</h1>
+      <p class="lede">Scan groceries as you put them away, and Provantry keeps track of what you have, where it is, and when it expires — so you stop buying duplicates and stop throwing food out.</p>
+    </header>
+
+    <main>
+      <ul class="features">
+        <li>
+          <span class="tag">Scan</span>
+          <div>
+            <h3>Add items in seconds</h3>
+            <p>Scan a barcode or type it in by hand. Provantry looks up the product automatically — you just confirm the quantity and where it's going.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">Track</span>
+          <div>
+            <h3>Never lose track of expiration dates</h3>
+            <p>Set a date when you scan an item, and your whole inventory stays organized — nothing forgotten in the back of the fridge.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">Organize</span>
+          <div>
+            <h3>Locations that match your kitchen</h3>
+            <p>Fridge, Freezer, Pantry, or anything else — set up storage locations the way your household actually works.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">Plan</span>
+          <div>
+            <h3>Meal planning, when you're ready</h3>
+            <p>Provantry Pro adds a meal calendar and reusable recipe templates that check your inventory before you cook.</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <span>A Blue Ink Diagnostics, LLC product</span>
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:bleuinkdiag@gmail.com">Contact</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
